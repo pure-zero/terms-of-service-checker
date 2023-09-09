@@ -1,0 +1,26 @@
+{
+    "name": "Terms of Service Checker",
+    "description": "Chat gpt tool to understand Terms of Service",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "src/popup/index.html"
+    },
+    "options_ui": {
+      "page": "src/options/index.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }],
+    "permissions": ["storage", "scripting", "activeTab", "notifications"],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
+  
