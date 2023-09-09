@@ -1,3 +1,8 @@
+# Terms of service summary
+
+Project to test out sevlte as a candidate for extension development.
+
+
 # Svelte + TS + Vite
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
